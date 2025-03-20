@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.testimonial-slider .slick-slide {
+  margin: 10px 5px; /* Cards ke beech space */
+}
+.testimonial-slider {
+  padding: 0px 5px; /* Overall spacing */
+}
+header {
+  z-index: 10000;
+}

@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotelogix</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom Styles */
+      body {
+        @apply bg-gray-100 text-gray-900;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gray-100">
+    <!-- header starts  -->
+    <section>
+      <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div
+          class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+        >
+          <p class="text-2xl font-bold text-blue-600 cursor-pointer">
+            My Portfolio
+          </p>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-6">
+            <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+            <a href="#skills" class="text-gray-700 hover:text-blue-600"
+              >Skills</a
+            >
+            <a href="#experience" class="text-gray-700 hover:text-blue-600"
+              >Experience</a
+            >
+            <a href="#projects" class="text-gray-700 hover:text-blue-600"
+              >Projects</a
+            >
+            <a href="#testimonials" class="text-gray-700 hover:text-blue-600"
+              >Reviews</a
+            >
+            <a href="#contact" class="text-gray-700 hover:text-blue-600"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-toggle"
+            class="md:hidden text-gray-700 focus:outline-none"
+          >
+            <svg
+              id="menu-icon"
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+            <svg
+              id="close-icon"
+              class="w-6 h-6 hidden"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav
+          id="mobile-menu"
+          class="hidden md:hidden absolute top-16 left-0 w-full bg-white shadow-lg"
+        >
+          <a
+            href="#home"
+            class="block px-6 py-3 text-gray-700 hover:bg-gray-200"
+            >Home</a
+          >
+          <a
+            href="#skills"
+            class="block px-6 py-3 text-gray-700 hover:bg-gray-200"
+            >Skills</a
+          >
+          <a
+            href="#experience"
+            class="block px-6 py-3 text-gray-700 hover:bg-gray-200"
+            >Experience</a
+          >
+          <a
+            href="#projects"
+            class="block px-6 py-3 text-gray-700 hover:bg-gray-200"
+            >Projects</a
+          >
+          <a
+            href="#testimonials"
+            class="block px-6 py-3 text-gray-700 hover:bg-gray-200"
+            >Reviews</a
+          >
+          <a
+            href="#contact"
+            class="block px-6 py-3 text-gray-700 hover:bg-gray-200"
+            >Contact</a
+          >
+        </nav>
+      </header>
+    </section>
+    <!-- header ends -->
+    <!-- Introduction Section Starts -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 px-6"
+    >
+      <div class="max-w-3xl text-center text-white">
+        <h1 class="lg:text-5xl md:text-4xl text-3xl font-bold">
+          Hi, I'm Sharukh Khan 👋
+        </h1>
+        <p class="mt-4 text-lg">
+          I'm a Full-Stack Developer with 4 years of experience in Flask,
+          Django, React, and Angular. I have worked on LMS, publication
+          software, e-commerce platforms, PMS, and HR management software,
+          delivering scalable and efficient solutions for businesses.
+        </p>
+        <div class="mt-6">
+          <a
+            href="#projects"
+            class="px-6 py-3 bg-white text-blue-600 rounded-lg shadow-lg text-lg hover:bg-gray-200"
+          >
+            View My Work
+          </a>
+          <a
+            href="#contact"
+            class="px-6 py-3 ml-4 border border-white text-white rounded-lg shadow-lg text-lg hover:bg-white hover:text-blue-600"
+          >
+            Hire Me
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Introduction Section Ends -->
+    <!-- Skills Section Starts -->
+    <section id="skills" class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-blue-600">
+          Skills & Technologies
+        </h2>
+        <p class="text-gray-700 text-center mt-2">
+          Here are the technologies I specialize in:
+        </p>
+
+        <!-- Frontend Skills -->
+        <div class="mt-10">
+          <h3 class="text-2xl font-semibold text-blue-500">
+            Frontend Development
+          </h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                class="w-16 h-16"
+                alt="HTML5"
+              />
+              <p class="mt-2 font-semibold">HTML5</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                class="w-16 h-16"
+                alt="CSS3"
+              />
+              <p class="mt-2 font-semibold">CSS3</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                class="w-16 h-16"
+                alt="JavaScript"
+              />
+              <p class="mt-2 font-semibold">JavaScript</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+                class="w-16 h-16"
+                alt="jQuery"
+              />
+              <p class="mt-2 font-semibold">jQuery</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                class="w-16 h-16"
+                alt="Bootstrap"
+              />
+              <p class="mt-2 font-semibold">Bootstrap</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png"
+                class="w-16 h-16"
+                alt="Tailwind"
+              />
+              <p class="mt-2 font-semibold">Tailwind</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                class="w-16 h-16"
+                alt="React"
+              />
+              <p class="mt-2 font-semibold">React.js</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                class="w-16 h-16"
+                alt="Angular"
+              />
+              <p class="mt-2 font-semibold">Angular</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
+                class="w-16 h-16"
+                alt="Material UI"
+              />
+              <p class="mt-2 font-semibold">Material UI</p>
+            </div>
+
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsu9DT1XLVF5b0A-LgCJr0RdXhHJL6CXuhbw&s"
+                class="w-16 h-16"
+                alt="Syncfusion"
+              />
+              <p class="mt-2 font-semibold">Syncfusion</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="mt-12">
+          <h3 class="text-2xl font-semibold text-blue-500">
+            Backend Development
+          </h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                class="w-16 h-16"
+                alt="Python"
+              />
+              <p class="mt-2 font-semibold">Python</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                class="w-16 h-16"
+                alt="Django"
+              />
+              <p class="mt-2 font-semibold">Django</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                class="w-16 h-16"
+                alt="Flask"
+              />
+              <p class="mt-2 font-semibold">Flask</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                class="w-16 h-16"
+                alt="Django Rest Framework"
+              />
+              <p class="mt-2 font-semibold">DRF</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://kafka.apache.org/logos/kafka_logo--simple.png"
+                class=""
+                alt="Kafka"
+              />
+              <p class="mt-2 font-semibold">Kafka</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://docs.celeryq.dev/en/stable/_static/celery_512.png"
+                class="w-16 h-16"
+                alt="Celery"
+              />
+              <p class="mt-2 font-semibold">Celery</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+                class="w-16 h-16"
+                alt="WordPress"
+              />
+              <p class="mt-2 font-semibold">WordPress</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="mt-12">
+          <h3 class="text-2xl font-semibold text-blue-500">Database</h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                class="w-16 h-16"
+                alt="MySQL"
+              />
+              <p class="mt-2 font-semibold">MySQL</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                class="w-16 h-16"
+                alt="MongoDB"
+              />
+              <p class="mt-2 font-semibold">MongoDB</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Server & Other Tech -->
+        <div class="mt-12">
+          <h3 class="text-2xl font-semibold text-blue-500">
+            Server & Other Technologies
+          </h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://download.logo.wine/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.png"
+                class="w-16 h-16"
+                alt="AWS"
+              />
+              <p class="mt-2 font-semibold">AWS</p>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                class="w-16 h-16"
+                alt="Git"
+              />
+              <p class="mt-2 font-semibold">Git & GitHub</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section Ends -->
+    <!-- Experience Starts -->
+    <section id="experience" class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-blue-600 mb-12 text-center">
+          Experience
+        </h2>
+
+        <!-- Experience Card -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-blue-600"
+        >
+          <div class="flex justify-between items-center">
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Frontend Developer
+            </h3>
+            <span class="text-sm text-gray-600">Nov 2020 - Dec 2021</span>
+          </div>
+          <p class="text-blue-600 font-medium mt-1">Capital Technology</p>
+
+          <ul class="mt-4 space-y-1 text-gray-700">
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Designed & customized WordPress websites with Elementor &
+              WPBakery.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Worked on Laravel projects, modifying UI components & layouts.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Developed & optimized WooCommerce stores with payment gateways.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Integrated jQuery plugins for dynamic UI enhancements.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Used Git & GitHub for version control & team collaboration.
+            </li>
+          </ul>
+          <!-- Tech Stack -->
+          <div class="mt-6">
+            <h4 class="text-lg font-semibold text-gray-800 mb-2">
+              Technologies Used:
+            </h4>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >WordPress</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >WooCommerce</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >PHP Laravel</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >jQuery</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Elementor</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Tailwind CSS</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Bootstrap</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >GitHub</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Experience Card -->
+        <div
+          class="bg-white p-8 mt-8 rounded-xl shadow-lg border-l-4 border-blue-600"
+        >
+          <div class="flex justify-between items-center">
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Software Engineer
+            </h3>
+            <span class="text-sm text-gray-600">Dec 2021 - Aug 2024</span>
+          </div>
+          <p class="text-blue-600 font-medium mt-1">Souvenir Publisher</p>
+
+          <ul class="mt-4 space-y-1 text-gray-700">
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Developed and maintained Single & Multi-Vendor E-commerce
+              platforms.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Built a full-fledged LMS (Learning Management System) with video
+              courses, quizzes & progress tracking.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Created dynamic company pages with interactive UI and SEO
+              optimization.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Designed and implemented Calibration Industry Projects for
+              automation & reporting.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Developed a Salesman Tracking App using React & Ionic with live
+              GPS tracking.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Created Dova, a sales management system using React & Django Rest
+              Framework.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Built DAMS (Data Asset Management System) for secure data storage
+              & retrieval.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Integrated Celery & AWS for background tasks & cloud hosting.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Managed and optimized API performance using Django Rest Framework.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Used Git & GitHub for version control & team collaboration.
+            </li>
+          </ul>
+
+          <!-- Tech Stack -->
+          <div class="mt-6">
+            <h4 class="text-lg font-semibold text-gray-800 mb-2">
+              Technologies Used:
+            </h4>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >HTML</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >CSS</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >JavaScript</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Bootstrap 5</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Tailwind CSS</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >jQuery</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >React</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Material UI</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Python</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Django</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Django Rest Framework</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Celery</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >AWS</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Git & GitHub</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Experience Card -->
+        <div
+          class="bg-white p-8 mt-8 rounded-xl shadow-lg border-l-4 border-blue-600"
+        >
+          <div class="flex justify-between items-center">
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Software Engineer
+            </h3>
+            <span class="text-sm text-gray-600">Aug 2024 - Present</span>
+          </div>
+          <p class="text-blue-600 font-medium mt-1">Hotelogix</p>
+
+          <ul class="mt-4 space-y-1 text-gray-700">
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Working on a Flask-based PMS (Property Management System) for the
+              hotel industry.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Developing an HR management web application with Django & Angular.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Implementing Biometric Authentication with OpenCV & Flask.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Optimizing API performance with Django Rest Framework.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Using Celery for background task automation and scheduling.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Integrated Syncfusion UI components into Angular applications.
+            </li>
+            <li class="flex items-center">
+              <span class="text-blue-600 text-lg mr-2">✔</span>
+              Worked with Git & GitHub for version control and team
+              collaboration.
+            </li>
+          </ul>
+
+          <!-- Tech Stack -->
+          <div class="mt-6">
+            <h4 class="text-lg font-semibold text-gray-800 mb-2">
+              Technologies Used:
+            </h4>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >HTML</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >CSS</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >JavaScript</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >jQuery</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Bootstrap 5</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Angular</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Syncfusion</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Python</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Django</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Django Rest Framework</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Flask</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Celery</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >NumPy</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >OpenCV</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                >Git & GitHub</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience Ends  -->
+    <section id="projects" class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-blue-600 mb-12 text-center">
+          Projects
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- E-Commerce -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div class="text-5xl text-green-600 mb-4 flex justify-center">
+              <img
+                src="./assets/img/ecommerce.png"
+                alt="e-commerce"
+                class="w-24"
+              />
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800">
+              E-Commerce Platform
+            </h3>
+            <p class="mt-2 text-gray-600 text-justify">
+              I have developed an E-Commerce platform for both single and
+              multi-vendor models. The platform is built using custom coding as
+              well as WordPress, offering flexibility and scalability. It
+              includes secure payment integration, efficient order tracking, and
+              a user-friendly interface. The backend ensures high performance
+              and security, while the frontend is designed for a seamless
+              shopping experience. Custom features such as dynamic product
+              management, discount handling, and analytics dashboards enhance
+              the platform's functionality.
+            </p>
+            <div class="mt-4 flex flex-wrap justify-center gap-2">
+              <span
+                class="px-3 py-1 text-sm font-medium bg-blue-100 text-blue-800 rounded-full"
+                >HTML/CSS/JS</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-green-100 text-green-800 rounded-full"
+                >jQuery</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-orange-100 text-orange-800 rounded-full"
+                >Tailwind CSS</span
+              >
+
+              <span
+                class="px-3 py-1 text-sm font-medium bg-indigo-100 text-indigo-800 rounded-full"
+                >Bootstrap 5</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-yellow-100 text-yellow-800 rounded-full"
+                >React/Next Js</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-purple-100 text-purple-800 rounded-full"
+                >Python</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-teal-100 text-teal-800 rounded-full"
+                >Django</span
+              >
+
+              <span
+                class="px-3 py-1 text-sm font-medium bg-gray-100 text-gray-800 rounded-full"
+                >WordPress</span
+              >
+            </div>
+          </div>
+
+          <!-- LMS -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div class="text-5xl text-purple-600 mb-4 flex justify-center">
+              <img src="./assets/img/lms.png" alt="e-commerce" class="w-24" />
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800">LMS System</h3>
+            <p class="mt-2 text-gray-600 text-justify">
+              I have developed a complete Learning Management System (LMS)
+              tailored for publications. This system allows publishers to upload
+              their books, which are automatically converted into eBooks with
+              synchronized audio. Alongside the books, publishers can add MCQs
+              and generate question papers dynamically. The LMS also includes a
+              video integration feature, enabling students to study book content
+              online, take practice tests, and export questions using the QPG
+              method. Teachers can create structured exams, making this platform
+              a full-fledged digital learning solution.
+            </p>
+            <div class="mt-4 flex flex-wrap justify-center gap-2">
+              <span
+                class="px-3 py-1 text-sm font-medium bg-blue-100 text-blue-800 rounded-full"
+                >HTML/CSS/JS</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-red-100 text-red-800 rounded-full"
+                >jQuery</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-indigo-100 text-indigo-800 rounded-full"
+                >Bootstrap</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-green-100 text-green-800 rounded-full"
+                >Python</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-yellow-100 text-yellow-800 rounded-full"
+                >Django</span
+              >
+            </div>
+          </div>
+
+          <!-- DAMS -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div class="text-5xl text-blue-600 mb-4 flex justify-center">
+              <img
+                src="./assets/img/cloud-storage.png"
+                alt="cloud-storage"
+                class="w-24"
+              />
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800">
+              DAMS (Document & Asset Management System)
+            </h3>
+            <p class="mt-2 text-gray-600 text-justify">
+              I have developed a Digital Asset Management System (DAMS)
+              specifically designed for publishers to securely store, track, and
+              manage their original book files. This system enables publishers
+              to handle document security, control access permissions, and track
+              the complete lifecycle of book production. It manages records of
+              paper stock, printing orders, payments made, outstanding balances,
+              and print house transactions. Additionally, it ensures strict
+              authentication and permission-based CRUD operations for books,
+              enhancing security and data integrity.
+            </p>
+            <div class="mt-4 flex flex-wrap justify-center gap-2">
+              <span
+                class="px-3 py-1 text-sm font-medium bg-blue-100 text-blue-800 rounded-full"
+                >HTML/CSS/JS</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-red-100 text-red-800 rounded-full"
+                >jQuery</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-indigo-100 text-indigo-800 rounded-full"
+                >Bootstrap</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-green-100 text-green-800 rounded-full"
+                >Python</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-yellow-100 text-yellow-800 rounded-full"
+                >Django</span
+              >
+            </div>
+          </div>
+
+          <!-- Sales Man Tracking -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div class="text-5xl text-orange-600 mb-4 flex justify-center">
+              <img
+                src="./assets/img/sales-man.png"
+                alt="cloud-storage"
+                class="w-24"
+              />
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Sales Man Tracking
+            </h3>
+            <p class="mt-2 text-gray-600 text-justify">
+              I have developed a GPS-based Sales Representative Tracking System
+              for book publishers. This system helps track sales agents as they
+              visit sellers and schools to give book demos. It logs the number
+              of schools and sellers visited, ensuring proper monitoring of
+              sales activities across India. The platform provides real-time
+              location tracking, visit history, and analytics to optimize sales
+              operations efficiently. Built with a robust backend and mobile app
+              support, it ensures seamless performance.
+            </p>
+            <div class="mt-4 flex flex-wrap justify-center gap-2">
+              <span
+                class="px-3 py-1 text-sm font-medium bg-blue-100 text-blue-800 rounded-full"
+                >HTML/CSS/JS</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-indigo-100 text-indigo-800 rounded-full"
+                >React</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-purple-100 text-purple-800 rounded-full"
+                >Material UI</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-green-100 text-green-800 rounded-full"
+                >Python</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-red-100 text-red-800 rounded-full"
+                >Django</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-yellow-100 text-yellow-800 rounded-full"
+                >Django Rest Framework</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-teal-100 text-teal-800 rounded-full"
+                >Ionic</span
+              >
+            </div>
+          </div>
+
+          <!-- Blogging Platform -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div class="text-5xl text-red-600 mb-4 flex justify-center">
+              <img
+                src="./assets/img/blog.png"
+                alt="cloud-storage"
+                class="w-24"
+              />
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Blogging Platform
+            </h3>
+            <p class="mt-2 text-gray-600 text-justify">
+              I have built a dynamic and SEO-optimized blogging system where
+              users can write and publish articles while monetizing them with
+              ads. This system supports both a custom-coded version and a
+              WordPress-based version. It includes advanced content management,
+              an intuitive editor, category tagging, and user authentication.
+              The platform also provides analytics, scheduled posts, and ad
+              placement for revenue generation. It ensures a smooth reading and
+              writing experience with fast performance and responsive design.
+            </p>
+            <div class="mt-4 flex flex-wrap justify-center gap-2">
+              <span
+                class="px-3 py-1 text-sm font-medium bg-blue-100 text-blue-800 rounded-full"
+                >HTML/CSS/JS</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-indigo-100 text-indigo-800 rounded-full"
+                >jQuery</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-green-100 text-green-800 rounded-full"
+                >Python</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-gray-100 text-gray-800 rounded-full"
+                >Django</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-purple-100 text-purple-800 rounded-full"
+                >WordPress</span
+              >
+            </div>
+          </div>
+
+          <!-- LMS for Robotics -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div class="text-5xl text-cyan-600 mb-4 flex justify-center">
+              <img
+                src="./assets/img/robot.png"
+                alt="cloud-storage"
+                class="w-24"
+              />
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800">
+              LMS for Robotics, STEM Lab Etc
+            </h3>
+            <p class="mt-2 text-gray-600 text-justify">
+              This LMS is designed for organizations focusing on Robotics and
+              STEM Labs to simplify the learning process in schools. It provides
+              an interactive platform where students learn topics related to
+              robotics, AI, and STEM education. The system ensures students
+              grasp concepts effectively by allowing them to take tests, and
+              they must achieve at least 80% overall to progress. A ticket
+              system is integrated for query resolution. Additionally, AI
+              chatbot integration is in progress using NLP for an interactive
+              learning experience.
+            </p>
+            <div class="mt-4 flex flex-wrap justify-center gap-2">
+              <span
+                class="px-3 py-1 text-sm font-medium bg-blue-100 text-blue-800 rounded-full"
+                >HTML/CSS/JS</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-purple-100 text-purple-800 rounded-full"
+                >jQuery</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-indigo-100 text-indigo-800 rounded-full"
+                >Bootstrap</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-green-100 text-green-800 rounded-full"
+                >Python</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-red-100 text-red-800 rounded-full"
+                >Django</span
+              >
+            </div>
+          </div>
+
+          <!-- Organization Landing Page -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div class="text-5xl text-teal-600 mb-4 flex justify-center">
+              <img
+                src="./assets/img/landing-page.png"
+                alt="cloud-storage"
+                class="w-24"
+              />
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Organization Page
+            </h3>
+            <p class="mt-2 text-gray-600 text-justify">
+              Developed multiple corporate websites with elegant designs,
+              business information, and seamless navigation. These websites
+              typically include 5-6 essential pages such as Home, About Us,
+              Services, Portfolio, Contact, and Blog. Built with both custom
+              coding and WordPress, ensuring flexibility and scalability for
+              different business needs. The websites are optimized for
+              performance, SEO-friendly, and mobile-responsive.
+            </p>
+            <div class="mt-4 flex flex-wrap justify-center gap-2">
+              <span
+                class="px-3 py-1 text-sm font-medium bg-blue-100 text-blue-800 rounded-full"
+                ><i class="fab fa-html5"></i> HTML</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-red-100 text-red-800 rounded-full"
+                ><i class="fab fa-bootstrap"></i> Bootstrap</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-gray-100 text-gray-800 rounded-full"
+                ><i class="fab fa-js"></i> JavaScript</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-green-100 text-green-800 rounded-full"
+                ><i class="fab fa-wordpress"></i> WordPress</span
+              >
+              <span
+                class="px-3 py-1 text-sm font-medium bg-indigo-100 text-indigo-800 rounded-full"
+                ><i class="fas fa-database"></i> PHP & MySQL</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-blue-600 mb-12 text-center">
+          Testimonials
+        </h2>
+
+        <!-- Slider Wrapper -->
+        <div class="testimonial-slider flex gap-6">
+          <!-- Testimonial Card 1 -->
+          <div
+            class="bg-white rounded-xl shadow-md p-6 text-center mx-3 flex flex-col justify-between"
+          >
+            <p class="text-gray-700 text-lg italic">
+              "Sharukh developed a complete LMS system for us, perfectly
+              tailored to our needs. His work was highly professional, and he
+              paid attention to every small detail. The features, UI/UX, and
+              functionality were delivered flawlessly. The code quality and
+              support were excellent as well. Highly recommended!"
+            </p>
+            <div class="mt-6">
+              <img
+                class="w-16 h-16 mx-auto rounded-full border-2 border-blue-500"
+                src="assets/img/2.png"
+                alt="Client 1"
+              />
+              <h3 class="text-xl font-semibold mt-2">Muhammad Faizan</h3>
+              <!-- <p class="text-gray-600 text-sm">Founder Genmeta Tech Solution Pvt. Ltd.</p> -->
+            </div>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div
+            class="bg-white rounded-xl shadow-md p-6 text-center mx-3 flex flex-col justify-between"
+          >
+            <p class="text-gray-700 text-lg italic">
+              "We entrusted him with building two e-commerce platforms and our
+              company website, and he delivered beyond expectations. The
+              websites are sleek, fast, and packed with powerful features. His
+              technical expertise and structured approach ensured a smooth
+              development process. A fantastic experience working with him!"
+            </p>
+            <div class="mt-6">
+              <img
+                class="w-16 h-16 mx-auto rounded-full border-2 border-blue-500"
+                src="assets/img/jeet.jpg"
+                alt="Client 2"
+              />
+              <h3 class="text-xl font-semibold mt-2">Jeet Chaudhary</h3>
+              <!-- <p class="text-gray-600 text-sm">Project Manager, WebWorks</p> -->
+            </div>
+          </div>
+
+          <!-- Testimonial Card 3 -->
+          <div
+            class="bg-white rounded-xl shadow-md p-6 text-center mx-3 flex flex-col justify-between"
+          >
+            <p class="text-gray-700 text-lg italic">
+              "He designed and developed a beautiful and highly functional
+              website for my digital marketing agency. The site perfectly
+              reflects our brand, is easy to navigate, and optimized for
+              performance. His ability to bring ideas to life with precision and
+              creativity was remarkable. Truly a great experience working with
+              him!"
+            </p>
+            <div class="mt-6">
+              <img
+                class="w-16 h-16 mx-auto rounded-full border-2 border-blue-500"
+                src="assets/img/deepa.jpg"
+                alt="Client 3"
+              />
+              <h3 class="text-xl font-semibold mt-2">Deepa Adhikari</h3>
+              <!-- <p class="text-gray-600 text-sm">Founder, Startup Hub</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me & Resume Download Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-blue-600 mb-12 text-center">
+          Contact Me
+        </h2>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white p-8 rounded-lg shadow-lg"
+        >
+          <!-- Left Side: Contact Image -->
+          <div class="flex justify-center">
+            <img
+              src="assets/img/contact-us.jpg"
+              alt="Contact"
+              class="w-80 h-auto"
+            />
+          </div>
+
+          <!-- Right Side: Contact Details -->
+          <div class="space-y-6">
+            <p class="text-lg text-gray-700">
+              Feel free to reach out to me for any project collaboration or
+              professional inquiries.
+            </p>
+
+            <div class="space-y-4">
+              <!-- Phone -->
+              <div class="flex items-center space-x-3">
+                <img
+                  src="assets/img/telephone.png"
+                  alt="Phone"
+                  class="w-6 h-6"
+                />
+                <a
+                  href="tel:+919876543210"
+                  class="text-lg text-gray-800 font-semibold hover:text-blue-500"
+                >
+                  +91 7701994686
+                </a>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="flex items-center space-x-3">
+                <img
+                  src="assets/img/whatsapp.png"
+                  alt="WhatsApp"
+                  class="w-6 h-6"
+                />
+                <a
+                  href="https://wa.me/917701994686"
+                  target="_blank"
+                  class="text-lg text-green-500 font-semibold hover:underline"
+                >
+                  Chat on WhatsApp
+                </a>
+              </div>
+
+              <!-- Email -->
+              <div class="flex items-center space-x-3">
+                <img src="assets/img/mail.png" alt="Email" class="w-6 h-6" />
+                <a
+                  href="mailto:example@gmail.com"
+                  class="text-lg text-gray-800 font-semibold hover:text-blue-500"
+                >
+                  umarsaruk9@gmail.com
+                </a>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="flex items-center space-x-3">
+                <img
+                  src="assets/img/linkedin.png"
+                  alt="LinkedIn"
+                  class="w-6 h-6"
+                />
+                <a
+                  href="https://www.linkedin.com/in/sarukraza/"
+                  target="_blank"
+                  class="text-lg text-blue-500 font-semibold hover:underline"
+                >
+                  linkedin.com/in/sarukraza
+                </a>
+              </div>
+
+              <!-- Location -->
+              <div class="flex items-center space-x-3">
+                <img
+                  src="assets/img/location.png"
+                  alt="Location"
+                  class="w-6 h-6"
+                />
+                <p class="text-lg text-gray-800 font-semibold">
+                  New Delhi, India
+                </p>
+              </div>
+            </div>
+
+            <!-- Resume Download -->
+            <a
+              href="assets/img/Resume.pdf"
+              download
+              class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold gap-2 items-center inline-flex hover:bg-blue-700 transition"
+            >
+              <img
+                src="assets/img/up-loading.png"
+                alt="Location"
+                class="w-6 h-6"
+              />
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Contact Me & Resume Download Section -->
+
+    <!-- Script  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <!-- Slick Slider Initialization -->
+    <script>
+      $(document).ready(function () {
+        $(".testimonial-slider").slick({
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+
+        document
+          .querySelector("form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Stop default form submission
+            alert("Hello");
+            let formData = new FormData(this);
+            fetch("send_mail.php", {
+              method: "POST",
+              body: formData,
+            })
+              .then((response) => response.text())
+              .then((data) => alert(data))
+              .catch((error) => console.error("Error:", error));
+          });
+      });
+
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const closeIcon = document.getElementById("close-icon");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
